@@ -60,8 +60,16 @@ def restore(dest_ip,src_ip):   #(victim,gateway)
     scapy.send(restore_packet,count=4,verbose=False)  #inc count allows the victim to receive the restore
 
 
-os.system("figlet ARPspoofer")
-print("\n\t\t\t\t\t by billy_j03l\n\n")
+ascii_art = r"""
+    _    ____  ____                         __           
+   / \  |  _ \|  _ \ ___ _ __   ___   ___  / _| ___ _ __ 
+  / _ \ | |_) | |_) / __| '_ \ / _ \ / _ \| |_ / _ \ '__|
+ / ___ \|  _ <|  __/\__ \ |_) | (_) | (_) |  _|  __/ |   
+/_/   \_\_| \_\_|   |___/ .__/ \___/ \___/|_|  \___|_|   
+                        |_|                              
+      """
+print(ascii_art,flush=True)
+print("\n\t\t\t\t\t by billy_j03l\n\n",flush=True)
 
 target=get_ip()[0]
 gateway=get_ip()[1]
