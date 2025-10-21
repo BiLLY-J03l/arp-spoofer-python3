@@ -27,8 +27,15 @@ ARP spoofer with python3
 
           docker build -t arp-spoofer .
 
+## Download Docker Image:
+
+-
+
+        docker pull billyj03l/arp-spoofer
+
 ### Run the container:
 
 -
 
         docker run --rm --net=host --privileged arp-spoofer -t <target_ip> -d <gateway_ip>
+
