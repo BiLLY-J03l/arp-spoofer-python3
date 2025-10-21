@@ -31,4 +31,4 @@ ARP spoofer with python3
 
 -
 
-        docker run --rm --net=host --privileged arp-spoofer <target_ip> <gateway_ip>
+        docker run --rm --net=host --privileged arp-spoofer -t <target_ip> -d <gateway_ip>
